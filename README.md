@@ -1,3 +1,4 @@
+
 # AII 600 final project
 
 Fork this repository once per project. The fork tracks the code and the documents. The documents are the proposal, the presentation, and `decisions.md`, which is the history of what was done and why.
@@ -6,8 +7,7 @@ Follow the [final project lab](https://vsokolov.org/labs/final-project-lab.html)
 
 ## Who
 
-Alone, or a group of at most three. One person forks. That person adds the other members and `VadimSokolov` as collaborators. On a repository owned by a personal account the role is Write. On the fork, write the names and GitHub usernames under this heading. One person speaks at the presentation. Every member can explain the whole repository.
-
+Solo project: MyCadence (@MyCadence).
 ## Fork
 
 The repository is public, and so is the fork.
@@ -55,6 +55,8 @@ Leave the data files out of git. A file you are allowed to republish goes on the
 ## Tools
 
 R or Python. Use the language you can explain. AI assistants are allowed. On your fork, add one line to this README: what you used, and for what. You are responsible for everything on `main`, including the parts you did not write.
+
+AI disclosure: ChatGPT helped scope the project question, research public data and local price examples, and draft the proposal and first decision-log entry; I reviewed the claims and am responsible for explaining and defending the work.
 
 ## Files
 
