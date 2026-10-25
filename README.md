@@ -56,8 +56,7 @@ Leave the data files out of git. A file you are allowed to republish goes on the
 
 R or Python. Use the language you can explain. AI assistants are allowed. On your fork, add one line to this README: what you used, and for what. You are responsible for everything on `main`, including the parts you did not write.
 
-AI disclosure: ChatGPT helped scope the project question, research public data and local price examples, and draft the proposal and first decision-log entry; I reviewed the claims and am responsible for explaining and defending the work.
-
+AI disclosure: ChatGPT helped scope the project question, research public data and local price examples, and draft the proposal and first decision-log entry. I am responsible for reviewing the claims and defending the work.
 ## Files
 
 - `PROPOSAL.md`. The proposal. Replace the prompts. Leave the headings.
