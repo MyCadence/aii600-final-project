@@ -56,6 +56,9 @@ Leave the data files out of git. A file you are allowed to republish goes on the
 
 R or Python. Use the language you can explain. AI assistants are allowed. On your fork, add one line to this README: what you used, and for what. You are responsible for everything on `main`, including the parts you did not write.
 
+## Disclosure
+Used OpenAI to search for forecast weather data in Fairfax. The last statement under Data section in PROPOSAL.md regarding terms of data usage: CoCoRaHS data are released under CC BY 3.0 with attribution. NOAA source terms and attribution will be recorded before deciding whether forecast files can be republished.
+
 ## Files
 
 - `PROPOSAL.md`. The proposal. Replace the prompts. Leave the headings.
