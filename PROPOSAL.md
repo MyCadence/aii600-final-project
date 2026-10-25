@@ -1,15 +1,13 @@
 # Proposal
 
-At most one page. Replace the prompts under each heading. Leave the headings.
-
 ## Hypothesis
 
-State the claim in one sentence. Then name the single quantity you will forecast or estimate, with its units and the time window.
+For a weekly Saturday 7–9 p.m. outdoor yoga class in Fairfax, a Friday-evening NOAA forecast can support the organizer’s choice to rent a canopy by estimating the probability that the CoCoRaHS 24-hour precipitation report covering Saturday records measurable rain (at least 0.01 in). The forecast quantity is that probability, in percent, for the report ending Sunday morning.
 
 ## Data
 
-Name the source, the unit of observation, the sample size, the time span, and how the data were collected. Say how what you measure differs from the quantity the decision needs. Say whether the terms let you republish the files. A release asset is a republished copy. If the terms do not allow that, the files stay off GitHub and `data/README.md` gives the command that downloads them from the source.
+The observed outcome will come from CoCoRaHS station [VA-FX-121, Fairfax 3.2 W](https://dex.cocorahs.org/stations/VA-FX-121/): 1,551 daily precipitation reports, May 16, 2022–August 23, 2026, with 99% of days covered. These are volunteer rain-gauge reports, generally read in the morning. There are 223 candidate Saturdays in this period before checking missing Saturday reports and matching forecast availability. Forecasts will come from NOAA’s archived [National Blend of Models (NBM) probabilistic text products](https://vlab.noaa.gov/web/mdl/nbm-text-archives); I will verify the issue time and valid window can be matched before modeling. A daily gauge total includes rain outside the 7–9 p.m. class and its reporting window may differ slightly from the forecast window, so it is an imperfect, potentially noisy proxy for class-time rain. CoCoRaHS data are released under CC BY 3.0 with attribution; NOAA source terms and attribution will be recorded before deciding whether forecast files can be republished.
 
 ## Decision affected by the model
 
-Name who acts, and what they will do differently because of the prediction. Say which mistake costs more.
+A hypothetical Fairfax yoga organizer decides Friday evening whether to rent a 10×20 canopy for Saturday. A local rental listing gives an example price of [$150](https://www.novaeventrentals.com/); a Fairfax studio lists [$27 per drop-in class](https://www.sunandmoonstudio.com/class-plans), used only as a revenue benchmark. If there are n paid attendees, the simplified loss of cancelling without a canopy is $27 × n; renting costs $150, before delivery or setup. Rent when forecast rain probability × $27 × n is greater than $150. For six or more attendees, missing a rainy day can cost more than the canopy; at five or fewer, renting for a dry day costs more under these assumptions. The decision depends on actual attendance, cancellation policy, and whether the canopy makes class feasible in rain.
