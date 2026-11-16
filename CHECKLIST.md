@@ -63,4 +63,4 @@ Tick every line that the pushed `main` covers. A line you cannot tick needs one 
 ## November 18 checkpoint status
 
 - [x] Preliminary results are on `main`: raw-data plot, summary table, chronological split, baseline, model, and held-out scores in dollar-loss units; `decisions.md` records the split, model, and loss.
-- [ ] Attach `data/matched_saturdays.csv` as a downloadable asset to the public release tagged `data`. The release exists, but currently has no release assets; the CSV is linked in the release notes only.
+- [x] Attach `data/matched_saturdays.csv` as a downloadable asset to the public release tagged `data`.
