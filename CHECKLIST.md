@@ -4,20 +4,20 @@ Tick every line that the pushed `main` covers. A line you cannot tick needs one 
 
 ## 1. Question
 
-- [ ] The question is one sentence, then one quantity with units and a time window.
+- [x] The question is one sentence, then one quantity with units and a time window.
 - [ ] The decision is named, and the loss or profit is a formula. The costlier mistake is named.
-- [ ] A layer diagram: data, model, prediction, decision.
+- [x] A layer diagram: data, model, prediction, decision.
 
 ## 2. Data
 
-- [ ] Source, unit of observation, sample size, time span, and how it was collected.
+- [x] Source, unit of observation, sample size, time span, and how it was collected.
 - [ ] How the measurement differs from the quantity the decision needs, and whether that gap is bias or noise.
-- [ ] One plot of the raw data and one table of summary statistics, before any model.
+- [x] One plot of the raw data and one table of summary statistics, before any model.
 
 ## 3. Model
 
-- [ ] The model as equations. Each parameter in words, and the mechanism it stands for.
-- [ ] The assumptions, and the one you trust least.
+- [x] The model as equations. Each parameter in words, and the mechanism it stands for.
+- [x] The assumptions, and the one you trust least.
 - [ ] Simulated data from the model, checked against the real data. If the fit can recover known parameters, show that it does.
 
 ## 4. Uncertainty
@@ -28,14 +28,14 @@ Tick every line that the pushed `main` covers. A line you cannot tick needs one 
 
 ## 5. Decision
 
-- [ ] An explicit rule from the prediction to the action, and why the loss picks that rule.
-- [ ] How the action changes when the main inputs change.
+- [x] An explicit rule from the prediction to the action, and why the loss picks that rule.
+- [x] How the action changes when the main inputs change.
 - [ ] What a better model or more data would be worth, in the units of the loss.
 
 ## 6. Evaluation
 
 - [ ] A held-out set the model never saw, and a calibration check.
-- [ ] The method scored against a simple baseline in the units of the decision, not only RMSE or R².
+- [x] The method scored against a simple baseline in the units of the decision, not only RMSE or R².
 - [ ] Where the method wins, and where it ties.
 
 ## Decisions
@@ -52,10 +52,15 @@ Tick every line that the pushed `main` covers. A line you cannot tick needs one 
 
 - [ ] Names and GitHub usernames are in `README.md`.
 - [ ] A group reached `main` through pull requests, and each request names a `decisions.md` entry.
-- [ ] `requirements.txt` pins the packages, and `.python-version` is the interpreter that ran the notebook. An R project uses `renv.lock` instead, which records the R version.
-- [ ] The `data` release holds the data files, or `data/README.md` gives the command that downloads them from the source. Each file has a SHA-256 there, and the notebook checks it. The notebook on `main` was run from the top and committed with its outputs. Secrets and fitted weights are not in git.
-- [ ] The split entry in `decisions.md` records the cutoff date, or the seed and the fraction.
+- [x] `requirements.txt` pins the packages, and `.python-version` is the interpreter that ran the notebook. An R project uses `renv.lock` instead, which records the R version.
+- [x] The `data` release holds the data files, or `data/README.md` gives the command that downloads them from the source. Each file has a SHA-256 there, and the notebook checks it. The notebook on `main` was run from the top and committed with its outputs. Secrets and fitted weights are not in git.
+- [x] The split entry in `decisions.md` records the cutoff date, or the seed and the fraction.
 
 ## Disclosure
 
-- [ ] One line in `README.md`: which AI tools you used, and for what.
+- [x] One line in `README.md`: which AI tools you used, and for what.
+
+## November 18 checkpoint status
+
+- [x] Preliminary results are on `main`: raw-data plot, summary table, chronological split, baseline, model, and held-out scores in dollar-loss units; `decisions.md` records the split, model, and loss.
+- [ ] Attach `data/matched_saturdays.csv` as a downloadable asset to the public release tagged `data`. The release exists, but currently has no release assets; the CSV is linked in the release notes only.
