@@ -56,8 +56,10 @@ Leave the data files out of git. A file you are allowed to republish goes on the
 
 R or Python. Use the language you can explain. AI assistants are allowed. On your fork, add one line to this README: what you used, and for what. You are responsible for everything on `main`, including the parts you did not write.
 
+AI disclosure: Used ChatGPT to find and retrieve public weather data, write the matching and analysis code, fit and evaluate the model, and review the interpretation; The notebook records the data match and model evaluation; I remain responsible for understanding and defending the work.
+
 ## Disclosure
-Used OpenAI to search for forecast weather data in Fairfax. The last statement under Data section in PROPOSAL.md regarding terms of data usage: CoCoRaHS data are released under CC BY 3.0 with attribution. NOAA source terms and attribution will be recorded before deciding whether forecast files can be republished.
+CoCoRaHS reports are attributed under CC BY 4.0. NOAA NBM data are public domain. Before the checkpoint, attach the matched analysis file to the public release tagged `data`.
 
 ## Files
 

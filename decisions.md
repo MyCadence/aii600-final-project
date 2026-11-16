@@ -9,3 +9,9 @@ This file is the history of the project. Append an entry when a choice changes t
 * Alternative. Use hourly rain at a nearby airport to label rain during class time (7–9 p.m.). I set that aside because the selected measurement is in Fairfax and this proposal uses a daily outcome. We will revisit that method if daily totals prove too weak a gauge for the decision.
 * Revisit. Change the target or data if NOAA’s archive cannot supply forecasts issued before the Friday decision with a usable valid-time match, if Saturday reports are too sparse, or if actual attendance, canopy, delivery, or extra setup costs materially change the loss rule.
 
+## 2026-11-15: Preliminary model and held-out evaluation
+
+* Split. Use Saturdays through 2025-12-27 for training (189 complete reports) and hold out 2026-01-03–2026-08-22 (33 complete reports); keep the 2026-01-18 missing CoCoRaHS outcome blank and exclude it from scoring so later weather never informs fitting.
+* Model. Compare the training rain frequency (baseline) with an L2-regularized logistic calibration of Friday 13Z NBM NBE P12 forecasts ending Sunday 00Z and 12Z; set this two-input form before scoring 2026, and revisit it if forecast calibration or the airport-to-gauge mismatch changes the decision.
+* Loss. Use $150 canopy rental versus $27 × n gross revenue at risk on a wet report, rent when p × $27 × n > $150, score first at illustrative n=8 (69.4% threshold) and show n=6 and n=10 sensitivity; replace these scenario inputs if an organizer supplies actual attendance, margin, delivery/setup costs, or cancellation consequences.
+
